@@ -33,25 +33,26 @@ There is no missing data and the data is exactly symmetrical with half negative 
 ● Removing Stopwords,
 ● Obtain clean data.
 
-
-
 **Feature transformation:**
 The processed data is a clean text data that needs to be transformed into features and to transform the text reviews into numerical values two kinds of vectorizations are used and they are CountVectorizer (Bag of Words) and TFIDFVectorizer ( Term Frequency -Inverse Document frequency). To convert the text into metric based on the frequency of the words both these vectorizations methods are used based on the rule that frequently used words carry less importance in deriving the sentiment of the statement.
-
 The data is split into test and training data for the features and vectorization methods are applied. The target variable is also divided into test and train split. The partition to train to test ratio is 80% to 20%. The data is featured to train the classification models.
 
 **Model Selection and Results**
 Three models of classification are used to model the review dataset. Logistic Regression, SVM(Support Vector Machine) and Naive Bayes are used to classify the models. Naive Bayes in general is a good model to carry to text classifications. Our systems are not capable of Neural Network classification with 50,000 records of text data so we had to stop proceeding with the Neural Network classifier.
 
 **The accuracy results of the models are as follows:**
+
 **Logistic Regression:** 
 Bag of Words - 75%
-TFIDFVectorizer -75%
+TFIDFVectorizer -75%.
+
 **SVM:**
 Bag of Words - 58%
-TFIDFVectorizer - 51%
+TFIDFVectorizer - 51%.
+
 **Naive Bayes:**
 Bag of Words - 75%
-TFIDFVectorizer -75%
+TFIDFVectorizer -75%.
+
 **Logistic Regression and Naive Bayes are able to classify with better accuracy for both vectorization methods.**
  
