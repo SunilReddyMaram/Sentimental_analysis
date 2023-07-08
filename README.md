@@ -43,12 +43,15 @@ The data is split into test and training data for the features and vectorization
 **Model Selection and Results**
 Three models of classification are used to model the review dataset. Logistic Regression, SVM(Support Vector Machine) and Naive Bayes are used to classify the models. Naive Bayes in general is a good model to carry to text classifications. Our systems are not capable of Neural Network classification with 50,000 records of text data so we had to stop proceeding with the Neural Network classifier.
 
-**The accuracy results of the models are as follows: Logistic Regression:** 
+**The accuracy results of the models are as follows:**
+**Logistic Regression:** 
 Bag of Words - 75%
-TFIDFVectorizer -75% SVM:
+TFIDFVectorizer -75%
+**SVM:**
 Bag of Words - 58%
-TFIDFVectorizer - 51% Naive Bayes:
-Bag of Words - 75% TFIDFVectorizer -75%
-Logistic Regression and Naive Bayes are able to classify with better accuracy for both vectorization methods.
-
+TFIDFVectorizer - 51%
+**Naive Bayes:**
+Bag of Words - 75%
+TFIDFVectorizer -75%
+**Logistic Regression and Naive Bayes are able to classify with better accuracy for both vectorization methods.**
  
